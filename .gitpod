@@ -7,4 +7,4 @@ ports:
   - port: 6080
     protocol: "http"
 tasks:
-  - command: "/home/redsea/src/redsea -f /home/redsea/src/mpx.wav"
+  - command: "/home/gitpod/redsea/src/redsea -f /home/gitpod/redsea/mpx.wav"
