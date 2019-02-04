@@ -1,0 +1,10 @@
+
+checkoutLocation: src/github.com/op07n/gitpod_redsea
+workspaceLocation: /
+image:
+  file: Dockerfile
+ports:
+  - port: 6080
+    protocol: "http"
+tasks:
+  - command: "redsea -f mpx.wav"
