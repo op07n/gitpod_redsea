@@ -14,8 +14,8 @@ RUN git clone https://github.com/windytan/redsea.git
 # RUN cd redsea
 RUN cd /home/gitpod/redsea
  
-# RUN ./autogen.sh && ./configure && make
+RUN ./autogen.sh && ./configure && make
 
-# RUN make install
+RUN make install
 
 USER root
