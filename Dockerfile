@@ -10,7 +10,7 @@ RUN apt-get update \
 # USER gitpod
 
 RUN cd /home/gitpod \
-  && git clone https://github.com/windytan/redsea.git  \
+  && git clone https://github.com/op07n/redsea.git  \
   && cd redsea  \
   && ./autogen.sh  \
   && ./configure  \
