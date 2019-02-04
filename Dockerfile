@@ -12,7 +12,7 @@ USER gitpod
 RUN git clone https://github.com/windytan/redsea.git
  
 # RUN cd redsea
-RUN cd /home/gitpod/redsea
+RUN cd redsea
  
 RUN ./autogen.sh && ./configure && make
 
