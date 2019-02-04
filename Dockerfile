@@ -5,9 +5,9 @@ RUN apt-get update \
     && apt-get install -y build-essential autoconf libsndfile1-dev libliquid-dev \
     && apt-get clean && rm -rf /var/cache/apt/* && rm -rf /var/lib/apt/lists/* && rm -rf /tmp/*
 
-RUN git clone https://github.com/windytan/redsea.git
+RUN git clone https://github.com/windytan/redsea.git /workspace
  
-RUN cd redsea
+RUN cd /workspace/redsea
  
 RUN ./autogen.sh && ./configure && make
 
