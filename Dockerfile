@@ -9,15 +9,12 @@ RUN apt-get update \
 
 USER gitpod
 
-RUN cd /home/gitpod
-
-RUN git clone https://github.com/windytan/redsea.git
- 
-# RUN cd redsea
-RUN cd redsea
- 
-RUN ./autogen.sh && ./configure && make
-
-RUN make install
+RUN cd /home/gitpod \
+  && git clone https://github.com/windytan/redsea.git 
+  && cd redsea 
+  && ./autogen.sh 
+  && ./configure 
+  && make
+  && make install
 
 USER root
