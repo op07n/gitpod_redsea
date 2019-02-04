@@ -9,6 +9,8 @@ RUN apt-get update \
 
 USER gitpod
 
+RUN cd /home/gitpod
+
 RUN git clone https://github.com/windytan/redsea.git
  
 # RUN cd redsea
